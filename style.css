@@ -20,12 +20,12 @@ body {
 /* LAYOUT */
 header {
   position: relative;
-  min-height: 35vh;
+  height: 35vh;
   border-bottom: 7px solid #eee;
 }
 
 main {
-  min-height: 65vh;
+  height: 65vh;
   color: #eee;
   display: flex;
   align-items: center;
