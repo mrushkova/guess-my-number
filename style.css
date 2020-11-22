@@ -20,12 +20,12 @@ body {
 /* LAYOUT */
 header {
   position: relative;
-  height: 35vh;
+  min-height: 35vh;
   border-bottom: 7px solid #eee;
 }
 
 main {
-  height: 65vh;
+  min-height: 65vh;
   color: #eee;
   display: flex;
   align-items: center;
@@ -33,14 +33,14 @@ main {
 }
 
 .left {
-  width: 52rem;
+  max-width: 52rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .right {
-  width: 52rem;
+  max-width: 52rem;
   font-size: 2rem;
 }
 
@@ -115,4 +115,58 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 50%;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+  }
+
+  .between {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+  .message {
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .number {
+    font-size: 4.5rem;
+    padding: 2rem 0rem;
+  }
+
+  .guess {
+    font-size: 4rem;
+    padding: 2rem;
+    width: 20rem;
+  }
+
+  .btn {
+    padding: 2rem 2rem;
+  }
 }
