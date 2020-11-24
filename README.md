@@ -2,7 +2,7 @@
 
 This is a small game created for practicing a DOM manipulation with JavaScript.
 
-- HTML5, CSS3
+- HTML5, CSS3, JavaScript
 - flexbox layout
 - desktop-first responsive design
 
